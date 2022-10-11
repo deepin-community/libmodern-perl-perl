@@ -1,0 +1,42 @@
+Source: libmodern-perl-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Ivan Kohler <ivan-debian@420.am>,
+           gregor herrmann <gregoa@debian.org>,
+           Xavier Guimard <yadd@debian.org>
+Section: perl
+Testsuite: autopkgtest-pkg-perl
+Priority: optional
+Build-Depends: debhelper-compat (= 12)
+Build-Depends-Indep: perl
+Standards-Version: 4.5.0
+Vcs-Browser: https://salsa.debian.org/perl-team/modules/packages/libmodern-perl-perl
+Vcs-Git: https://salsa.debian.org/perl-team/modules/packages/libmodern-perl-perl.git
+Homepage: https://metacpan.org/release/Modern-Perl
+Rules-Requires-Root: no
+
+Package: libmodern-perl-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Description: module for enabling all of the features of Modern Perl
+ Modern Perl programs use several modules to enable additional features of
+ Perl and of the CPAN. Instead of copying and pasting all of these 'use'
+ lines, instead write only one:
+ .
+    use Modern::Perl;
+ .
+ This enables the strict and warnings pragmas, as well as all of the features
+ available since Perl 5.10.
+ .
+ For enabling features of newer Perl releases, a year can be specified as an
+ import tag, e.g.:
+ .
+    use Modern::Perl '2017';
+ .
+ enables 5.24 features. Cf. Modern::Perl(3pm) for details.
+ .
+ See http://www.modernperlbooks.com/mt/2009/01/toward-a-modernperl.html for
+ more information, http://www.modernperlbooks.com/ for further discussion of
+ Modern Perl and its implications, and
+ http://onyxneon.com/books/modern_perl/index.html for a freely-downloadable
+ Modern Perl tutorial.

@@ -1,0 +1,226 @@
+libmodern-perl-perl (1.20200211-1) unstable; urgency=medium
+
+  * Import upstream version 1.20200211.
+
+ -- gregor herrmann <gregoa@debian.org>  Tue, 11 Feb 2020 18:48:30 +0100
+
+libmodern-perl-perl (1.20200201-1) unstable; urgency=medium
+
+  * Import upstream version 1.20200201.
+  * Update years of packaging copyright.
+  * Declare compliance with Debian Policy 4.5.0.
+  * Set Rules-Requires-Root: no.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 08 Feb 2020 15:03:40 +0100
+
+libmodern-perl-perl (1.20190727-1) unstable; urgency=medium
+
+  * Import upstream version 1.20190727.
+  * Drop manpage-whatis.patch, fixed upstream.
+  * Update (build) dependencies.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 11 Aug 2019 23:49:11 +0200
+
+libmodern-perl-perl (1.20190601-1) unstable; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * New upstream version 1.20190601
+  * Add patch to fix manpage-whatis warning
+
+  [ gregor herrmann ]
+  * Drop unneeded build dependency.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 03 Aug 2019 19:26:53 +0200
+
+libmodern-perl-perl (1.20180928-1) unstable; urgency=medium
+
+  [ Xavier Guimard ]
+  * Import upstream version 1.20180928
+    Closes: #930055
+
+  [ gregor herrmann ]
+  * Declare compliance with Debian Policy 4.4.0.
+  * Replace alternative (build) dependency as we have versioned provides.
+  * Bump debhelper-compat to 12.
+  * debian/watch: use uscan version 4.
+  * Annotate test-only build dependencies with <!nocheck>.
+
+ -- gregor herrmann <gregoa@debian.org>  Sun, 14 Jul 2019 15:37:06 -0300
+
+libmodern-perl-perl (1.20180901-1) unstable; urgency=medium
+
+  [ Xavier Guimard ]
+  * Email change: Xavier Guimard -> yadd@debian.org
+  * Set an email to upstream contact in debian/copyright
+  * Declare compliance with policy 4.2.1
+
+  [ gregor herrmann ]
+  * Import upstream version 1.20180901.
+  * Update years of packaging copyright.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 07 Sep 2018 20:27:17 +0200
+
+libmodern-perl-perl (1.20180701-1) unstable; urgency=medium
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-* headers for switch to salsa.debian.org
+
+  [ Xavier Guimard ]
+  * Import upstream version 1.20180701
+  * Update copyright years
+  * Declare compliance with policy 4.1.5
+  * Update debhelper compatibility level to 10
+
+ -- Xavier Guimard <x.guimard@free.fr>  Thu, 05 Jul 2018 07:01:24 +0200
+
+libmodern-perl-perl (1.20170117-1) unstable; urgency=medium
+
+  * Import upstream version 1.20170117.
+  * Update years of upstream and packaging copyright.
+  * Drop Breaks/Replaces libmodern-perl.
+    libmodern-perl is not in any suite going back to oldstable.
+  * Update long description to mention newest features.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 21 Jan 2017 19:31:46 +0100
+
+libmodern-perl-perl (1.20161229-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Salvatore Bonaccorso ]
+  * debian/control: Use HTTPS transport protocol for Vcs-Git URI
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Nick Morrott ]
+  * Import upstream version 1.20161229
+  * debian/copyright: update copyright years
+  * debian/upstream/metadata: add/update metadata
+  * Update debhelper compatibility level to 9
+  * debian/control: declare compliance with Debian Policy 3.9.8
+
+ -- Nick Morrott <knowledgejunkie@gmail.com>  Thu, 05 Jan 2017 14:17:19 +0000
+
+libmodern-perl-perl (1.20150127-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Add debian/upstream/metadata
+  * Import upstream version 1.20150127
+  * Update copyright years for upstream files
+  * Drop alternative Build-Depends-Indep for Test::More.
+    Test::More in the required version is already in Perl in wheezy.
+  * Declare the package autopkgtestable
+  * Declare compliance with Debian policy 3.9.6
+  * Add explicit Build-Depends on libmodule-build-perl
+  * Remove perl from Build-Depends
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sat, 06 Jun 2015 16:00:04 +0200
+
+libmodern-perl-perl (1.20140107-1) unstable; urgency=medium
+
+  * New upstream release.
+  * Update years of copyright.
+  * Update (build) dependencies.
+  * Update long description. (Closes: #708239)
+  * Declare compliance with Debian Policy 3.9.5.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 11 Jan 2014 23:59:32 +0100
+
+libmodern-perl-perl (1.20121103-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * debian/control: update {versioned,alternative} (build) dependencies.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Xavier Guimard ]
+  * Imported Upstream version 1.20121103
+  * Bump Standards-Version to 3.9.4
+  * Update debian/copyright (years and format)
+
+ -- Xavier Guimard <x.guimard@free.fr>  Sun, 31 Mar 2013 09:20:57 +0200
+
+libmodern-perl-perl (1.20120521-1) unstable; urgency=low
+
+  * Team upload.
+
+  [ gregor herrmann ]
+  * New upstream release (1.20120130).
+
+  [ Salvatore Bonaccorso ]
+  * Imported Upstream version 1.20120521
+  * Update format for debian/copyright file.
+    Update format to copyright-format 1.0 as released together with Debian
+    policy 3.9.3.
+  * Bump Standards-Version to 3.9.3
+
+ -- Salvatore Bonaccorso <carnil@debian.org>  Sun, 27 May 2012 17:05:24 +0200
+
+libmodern-perl-perl (1.20120126-1) unstable; urgency=low
+
+  * New upstream release.
+
+ -- gregor herrmann <gregoa@debian.org>  Sat, 28 Jan 2012 23:07:08 +0100
+
+libmodern-perl-perl (1.20120119-1) unstable; urgency=low
+
+  [ gregor herrmann ]
+  * Set Standards-Version to 3.9.1; replace Conflicts with Breaks.
+  * Remove alternative (build) dependencies that are already satisfied
+    in oldstable.
+  * Remove transitional dummy package libmodern-perl.
+
+  [ Ansgar Burchardt ]
+  * debian/control: Convert Vcs-* fields to Git.
+
+  [ Salvatore Bonaccorso ]
+  * debian/copyright: Replace DEP5 Format-Specification URL from
+    svn.debian.org to anonscm.debian.org URL.
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * Don't install README anymore.
+  * debian/copyright: update upstream and packaging copyright information;
+    refresh license stanzas.
+  * Bump Standards-Version to 3.9.2 (no changes).
+  * Add /me to Uploaders.
+  * Switch to debhelper compatibility level 8.
+  * Update (build) dependencies.
+  * Improve short and update long description.
+
+ -- gregor herrmann <gregoa@debian.org>  Fri, 20 Jan 2012 16:52:22 +0100
+
+libmodern-perl-perl (1.03-3) unstable; urgency=low
+
+  * Take over for the Debian Perl Group
+  * debian/control: Added: Vcs-Svn field (source stanza); Vcs-Browser
+    field (source stanza). Changed: Maintainer set to Debian Perl Group
+    <pkg-perl-maintainers@lists.alioth.debian.org> (was: Ivan Kohler
+    <ivan-debian@420.am>); Ivan Kohler <ivan-debian@420.am> moved to
+    Uploaders.
+  * Replace and Conflict with libmodern-perl (closes: Bug#577045)
+  * Build transitional dummy package for libmodern-perl
+  * Bump version to 1.03-3
+
+ -- Ivan Kohler <ivan-debian@420.am>  Sun, 25 Apr 2010 20:28:21 -0700
+
+libmodern-perl-perl (1.03-1) unstable; urgency=low
+
+  * Initial Release (closes: Bug#575976).
+
+ -- Ivan Kohler <ivan-debian@420.am>  Tue, 30 Mar 2010 19:58:02 -0700
